@@ -1,0 +1,98 @@
+
+body{
+  margin:0;
+  padding:0;
+  background-color: #e9eaed;
+  font-family:lucidaGrande, sans-serif;
+
+}
+
+
+#barra{
+  background-color: #5067af;
+  height:43px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+
+#content{
+  background-color: #f5db7f;
+  height:3000px;
+  width:852px;
+  margin: auto;
+
+}
+
+#cap{
+ height:358px;
+ background-color:#e9eaed;
+ background-image:url(../img/perfil.jpg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ border-radius: 3px;
+ border: solid 1px #ddd;
+}
+#cap h2{
+  margin-left:203px;
+  margin-top:73px;
+  color:#ffffff;
+  text-shadow: 3px 3px 3px #666;
+}
+#content #cap img{
+  position:relative;
+  top:177px;
+  left:21px;
+  border-radius:50%;
+  border: solid white 4px;
+  box-shadow: 0px 0px 1px #666;
+
+}
+#menu{
+  padding=0;
+  background-color: #e9eaed;
+  width:600px;
+  float:right;
+}
+
+#menu li{
+  line-height: 43px;
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+
+}
+#menu a{
+  color:#5067af;
+  text-decoration: none;
+  font-size:14px;
+}
+
+#principal{
+  height:200px;
+  width:300px;
+  background-color: #e9eaed;
+  border-radius: 3px;
+  border: solid 1px #ddd;
+}
+
+#principal presentacio{
+
+}
+
+#principal amistats{
+
+}
+
+#principal fotos{
+
+}
+
+#principal surprise{
+
+}
+
+#principal idioma{
+
+}
