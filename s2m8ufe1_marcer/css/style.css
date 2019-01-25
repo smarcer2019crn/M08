@@ -1,0 +1,256 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:#222;
+}
+
+/* Global */
+.container {
+  margin: auto;
+  overflow: hidden;
+  color:#FFF;
+}
+.container h4{
+  font-size: 22px;
+  color: #fff;
+}
+
+.container h1{
+  font-size: 14px;
+  color: #ccc;
+}
+
+.container h3{
+  font-size: 11px;
+  color: #ccc;
+  display:inline;
+}
+
+.container #categoria{
+  float:right;
+  margin: auto;
+  padding: auto;
+}
+
+.container div:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+
+
+/*Header**/
+header{
+  background-color: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  color: #ffffff;
+  min-height: 50px;
+  position: fixed;
+  width:100%;
+  display:block;
+}
+
+header a{
+  color:#CCC;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header ul{
+  margin=0;
+  padding=0;
+}
+
+header li{
+  float:left;
+  display: inline;
+  padding: 0 5px 0 5px;
+}
+
+header #nav1 ul{
+  margin-left:30px;
+}
+
+header #nav2 ul{
+  margin-right: 20px;
+}
+
+header #logo{
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left:20px;
+  margin-right: 10px;
+}
+
+
+header #nav1{
+  float:left;
+  margin-top: 10px;
+  width:40%;
+}
+
+header #nav2{
+  float:right;
+  margin-top: 10px;
+}
+
+
+header a:hover{
+  color:#fff;
+  font-weight: bold;
+}
+
+header #nav1 a:hover{
+  text-decoration: underline;
+}
+
+/* DOCUMENTALS */
+
+#docus{
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#docus div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#docus img{
+  border-radius: 5px;
+}
+
+#docusvistos {
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#docusvistos div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#docusvistos img{
+  border-radius: 5px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* PELICULAS */
+
+#pelispendents{
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#pelispendents div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#pelispendents img{
+  border-radius: 5px;
+  width: 175px;
+  height:260px;
+}
+
+#pelisvistas {
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#pelisvistas div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#pelisvistas img{
+  border-radius: 5px;
+  width: 175px;
+  height:260px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*series*/
+
+#seriespendents{
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#seriespendents div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#seriespendents img{
+  border-radius: 5px;
+  width: 175px;
+  height:260px;
+}
+
+#seriesvistas {
+  width:100%;
+  padding-left: 30px;
+  margin-right: 30px;
+  padding-top: 80px;
+  display: inline;
+  float:left;
+}
+
+#seriesvistas div{
+  float:left;
+  min-width:175px;
+  margin-right:10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#seriesvistas img{
+  border-radius: 5px;
+  width: 175px;
+  height:260px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* footer */
