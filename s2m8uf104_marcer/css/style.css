@@ -15,12 +15,13 @@ body{
   top:0;
   left:0;
   right:0;
+  z-index:80000;
 }
 
 #content{
-  height:3000px;
   width:852px;
   margin: auto;
+  overflow:hidden;
 
 }
 
@@ -32,6 +33,7 @@ body{
  background-size: contain;
  border-radius: 3px;
  border: solid 1px #ddd;
+
 }
 #cap h2{
   margin-left:203px;
@@ -50,7 +52,7 @@ body{
 }
 #menu{
 
-  padding=0;
+  padding:0;
   background-color: #ffffff;
   width:600px;
   float:right;
@@ -70,24 +72,23 @@ body{
 }
 
 .esquerra{
-  height:200px;
-  width:300px;
+  width:298px;
   background-color: #ffffff;
   border-radius: 3px;
   border: solid 1px #ddd;
   margin-top: 12px;
   float:left;
   clear:left;
+  padding:12px;
 
 }
 
 #presentacio{
-  height:566px;
+  height:346px;
 
 }
 
 #amistats{
- height:153px;
 }
 
 #fotos{
@@ -104,17 +105,261 @@ body{
 }
 
 .dreta{
-  height:200px;
-  width:516px;
+  height:100px;
+  width:492px;
   background-color: #ffffff;
   border-radius: 3px;
   border: solid 1px #ddd;
   margin-top: 12px;
   float:right;
   clear:right;
+  font-size: 12px;
+
+}
+
+
+.esquerra li, .dreta li{
+ text-decoration: none;
+ list-style-type: none;
+ display:block;
+ float:left;
+ line-height: 43px;
+ padding: 0 12px 0 12px;
 }
 
 aside{
   width: 322px;
   float:left;
+}
+
+#presentacio {
+  overflow:hidden;
+}
+
+#amistats li{
+}
+
+#seccio h2{
+  text-indent:24px;
+}
+
+#seccio h3{
+  background-image: url(../img/lateral.png);
+  background-repeat: no-repeat;
+  background-size:24px;
+  background-position:0 -24px;
+  text-indent: 26px;
+  height: 24px;
+}
+
+#presentacio h3{
+ background-position: 24;
+
+}
+
+#fotos h3{
+  background-position: 0 -72px;
+}
+
+#surprise h3{
+
+}
+
+
+#amistats h3{
+  background-position: 0 -48px;
+}
+
+#presentacio, #amistats, #fotos{
+  font-size:12px;
+}
+
+li a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#presentacio p{
+  border-bottom: solid 1px #ddd;
+  box-shadow:0 1px 0 #ddd;
+}
+
+
+#presentacio #residence{
+  background-image: url(../img/icones_domicili.png);
+  background-repeat: no-repeat;
+  background-size:24px;
+  background-position:0 0 1px;
+}
+
+#presentacio #work{
+  list-style-image:url(../img/icones_feina.png);
+}
+
+#presentacio #followers{
+  list-style-image:url(../img/icones_rss.png);
+}
+
+#amistats li{
+  width:85px;
+  height: 85px;
+  margin: 2px;
+  float: left;
+  padding:0;
+
+  position: relative;
+}
+
+#amistats li a:link{
+  color: white;
+  text-decoration:none;
+  position: absolute;
+  bottom:3px;
+
+}
+
+#DB {
+  background-image: url(../img/dany.jpg);
+}
+
+#ES {
+  background-image: url(../img/es.jpg);
+}
+#ET {
+  background-image: url(../img/et.jpg);
+}
+#NE {
+  background-image: url(../img/ne.jpg);
+}
+#AP {
+  background-image: url(../img/ap.jpg);
+}
+#BE {
+  background-image: url(../img/be.jpg);
+}
+#AG {
+  background-image: url(../img/ag.jpg);
+}
+#US {
+  background-image: url(../img/us.jpg);
+}
+#CC {
+  background-image: url(../img/cc.jpg);
+}
+
+/* POSTS */
+#post1{
+  background-color: #e9ebed;
+}
+
+#post1 ul{
+
+}
+
+#post1 #estat {
+  height: 38px;
+  width:516px;
+
+  background-color:#e9ebed;
+  padding:0;
+  margin:0;
+  top: 0;
+  left: 0;
+  position:relative;
+}
+
+#estat{
+  position: relative;
+  overflow: hidden;
+}
+
+#estat li{
+  list-style: none;
+  display: inline-block;
+  height: 38px;
+  margin: 0 0 0 1px;
+  padding: 0 12px;
+  font-size:8pt;
+  line-height:48px;
+  display: inline;
+  background-color: #fff;
+
+}
+
+
+
+#klkp{
+  display:block;
+  clear: left;
+  width:516px;
+  padding:12px;
+  position: relative;
+  height: 38px;
+  font-size:1.5em;
+  text-indent: 60px;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-position: 0 0 1px;
+}
+#klk_foto{
+ content: url(../img/perfil_yo.jpg);
+ display:block;
+ position:absolute;
+ height:40px;
+ width:40px;
+ border-radius: 20px;
+ z-index:100000000;
+ margin-left: 20px;
+ margin-top:12px;
+}
+
+
+#postaction {
+height: 48px;
+width:526px;
+float:left;
+background-color:#e9ebed;
+padding:0;
+margin:0;
+top: 0;
+left: 0;
+position:relative;
+clear:left;
+}
+
+#postaction li{
+  list-style:none;
+  display: inline-block;
+  margin: 0 0 0 1px;
+  font-size:8pt;
+  background-color: white;
+  line-height: 48px;
+  text-indent: 30px;
+  padding-left: 10px;
+}
+
+
+#postaction #p_foto{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/action_foto.png);
+}
+
+#postaction #p_etiq{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/action_etiq.png);
+}
+
+#postaction #p_sent{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/emoji.png);
+}
+#postaction #p_punt{
+  text-indent: inherit;
+  padding: inherit;
+}
+#post2{
+  margin-top: 60px;
 }
