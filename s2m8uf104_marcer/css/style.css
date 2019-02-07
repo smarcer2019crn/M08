@@ -1,4 +1,8 @@
 
+/*1280px version escritorio*/
+@media screen and (min-width:960px){
+
+
 body{
   margin:0;
   padding:0;
@@ -362,4 +366,72 @@ clear:left;
 }
 #post2{
   margin-top: 60px;
+}
+
+}
+
+/* MEDIA*/
+
+
+@media screen and (max-width:959px){
+
+  body {
+    margin:0;
+    padding:0;
+    background-color: #e9ebed;
+    font-family:'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+  }
+
+  nav{
+    visibility: hidden;
+  }
+
+  #content{
+    background-color:#ffffff;
+
+  }
+
+  #content #cap{
+    height: 254px;
+    background-image: url('../img/perfil.jpg');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 200;
+  }
+
+  #content #cap img{
+    width:162px;
+    height:162px;
+    border-radius: 50%;
+    border:solid 4px white;
+    margin-top: 173px;
+  }
+
+  #content #cap h2{
+    font-size: 28px;
+    font-weight: 200;
+
+
+  }
+
+  #cap li{
+    list-style: none;
+    line-height: 43px;
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+  }
+
+  #cap li a{
+    color:#5067af;
+    text-decoration: none;
+  }
+
+  #principal{
+    margin-top: 262px;
+  }
+
 }
