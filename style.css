@@ -1,9 +1,13 @@
 
+/*1280px version escritorio*/
+@media screen and (min-width:960px){
+
+
 body{
   margin:0;
   padding:0;
-  background-color: #e9eaed;
-  font-family:lucidaGrande, sans-serif;
+  background-color: #e9ebed;
+  font-family:'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
 
 }
 
@@ -15,24 +19,25 @@ body{
   top:0;
   left:0;
   right:0;
+  z-index:80000;
 }
 
 #content{
-  background-color: #f5db7f;
-  height:3000px;
   width:852px;
   margin: auto;
+  overflow:hidden;
 
 }
 
 #cap{
  height:358px;
- background-color:#e9eaed;
+ background-color:#ffffff;
  background-image:url(../img/perfil.jpg);
  background-repeat: no-repeat;
  background-size: contain;
  border-radius: 3px;
  border: solid 1px #ddd;
+
 }
 #cap h2{
   margin-left:203px;
@@ -50,9 +55,9 @@ body{
 
 }
 #menu{
-  margin-top: 12px;
-  padding=0;
-  background-color: #e9eaed;
+
+  padding:0;
+  background-color: #ffffff;
   width:600px;
   float:right;
 }
@@ -70,30 +75,363 @@ body{
   font-size:14px;
 }
 
-#principal{
-  height:200px;
-  width:300px;
-  background-color: #e9eaed;
+.esquerra{
+  width:298px;
+  background-color: #ffffff;
   border-radius: 3px;
   border: solid 1px #ddd;
-}
-
-#principal presentacio{
-
-}
-
-#principal amistats{
+  margin-top: 12px;
+  float:left;
+  clear:left;
+  padding:12px;
 
 }
 
-#principal fotos{
+#presentacio{
+  height:346px;
 
 }
 
-#principal surprise{
+#amistats{
+}
+
+#fotos{
+  height:420px;
 
 }
 
-#principal idioma{
+#surprise{
+ height:193px;
+}
+
+#idioma{
+ height:57px;
+}
+
+.dreta{
+  height:100px;
+  width:492px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #ddd;
+  margin-top: 12px;
+  float:right;
+  clear:right;
+  font-size: 12px;
+
+}
+
+
+.esquerra li, .dreta li{
+ text-decoration: none;
+ list-style-type: none;
+ display:block;
+ float:left;
+ line-height: 43px;
+ padding: 0 12px 0 12px;
+}
+
+aside{
+  width: 322px;
+  float:left;
+}
+
+#presentacio {
+  overflow:hidden;
+}
+
+#amistats li{
+}
+
+#seccio h2{
+  text-indent:24px;
+}
+
+#seccio h3{
+  background-image: url(../img/lateral.png);
+  background-repeat: no-repeat;
+  background-size:24px;
+  background-position:0 -24px;
+  text-indent: 26px;
+  height: 24px;
+}
+
+#presentacio h3{
+ background-position: 24;
+
+}
+
+#fotos h3{
+  background-position: 0 -72px;
+}
+
+#surprise h3{
+
+}
+
+
+#amistats h3{
+  background-position: 0 -48px;
+}
+
+#presentacio, #amistats, #fotos{
+  font-size:12px;
+}
+
+li a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#presentacio p{
+  border-bottom: solid 1px #ddd;
+  box-shadow:0 1px 0 #ddd;
+}
+
+
+#presentacio #residence{
+  background-image: url(../img/icones_domicili.png);
+  background-repeat: no-repeat;
+  background-size:24px;
+  background-position:0 0 1px;
+}
+
+#presentacio #work{
+  list-style-image:url(../img/icones_feina.png);
+}
+
+#presentacio #followers{
+  list-style-image:url(../img/icones_rss.png);
+}
+
+#amistats li{
+  width:85px;
+  height: 85px;
+  margin: 2px;
+  float: left;
+  padding:0;
+
+  position: relative;
+}
+
+#amistats li a:link{
+  color: white;
+  text-decoration:none;
+  position: absolute;
+  bottom:3px;
+
+}
+
+#DB {
+  background-image: url(../img/dany.jpg);
+}
+
+#ES {
+  background-image: url(../img/es.jpg);
+}
+#ET {
+  background-image: url(../img/et.jpg);
+}
+#NE {
+  background-image: url(../img/ne.jpg);
+}
+#AP {
+  background-image: url(../img/ap.jpg);
+}
+#BE {
+  background-image: url(../img/be.jpg);
+}
+#AG {
+  background-image: url(../img/ag.jpg);
+}
+#US {
+  background-image: url(../img/us.jpg);
+}
+#CC {
+  background-image: url(../img/cc.jpg);
+}
+
+/* POSTS */
+#post1{
+  background-color: #e9ebed;
+}
+
+#post1 ul{
+
+}
+
+#post1 #estat {
+  height: 38px;
+  width:516px;
+
+  background-color:#e9ebed;
+  padding:0;
+  margin:0;
+  top: 0;
+  left: 0;
+  position:relative;
+}
+
+#estat{
+  position: relative;
+  overflow: hidden;
+}
+
+#estat li{
+  list-style: none;
+  display: inline-block;
+  height: 38px;
+  margin: 0 0 0 1px;
+  padding: 0 12px;
+  font-size:8pt;
+  line-height:48px;
+  display: inline;
+  background-color: #fff;
+
+}
+
+
+
+#klkp{
+  display:block;
+  clear: left;
+  width:516px;
+  padding:12px;
+  position: relative;
+  height: 38px;
+  font-size:1.5em;
+  text-indent: 60px;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-position: 0 0 1px;
+}
+#klk_foto{
+ content: url(../img/perfil_yo.jpg);
+ display:block;
+ position:absolute;
+ height:40px;
+ width:40px;
+ border-radius: 20px;
+ z-index:100000000;
+ margin-left: 20px;
+ margin-top:12px;
+}
+
+
+#postaction {
+height: 48px;
+width:526px;
+float:left;
+background-color:#e9ebed;
+padding:0;
+margin:0;
+top: 0;
+left: 0;
+position:relative;
+clear:left;
+}
+
+#postaction li{
+  list-style:none;
+  display: inline-block;
+  margin: 0 0 0 1px;
+  font-size:8pt;
+  background-color: white;
+  line-height: 48px;
+  text-indent: 30px;
+  padding-left: 10px;
+}
+
+
+#postaction #p_foto{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/action_foto.png);
+}
+
+#postaction #p_etiq{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/action_etiq.png);
+}
+
+#postaction #p_sent{
+  background-position:10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url(../img/emoji.png);
+}
+#postaction #p_punt{
+  text-indent: inherit;
+  padding: inherit;
+}
+#post2{
+  margin-top: 60px;
+}
+
+}
+
+/* MEDIA*/
+
+
+@media screen and (max-width:959px){
+
+  body {
+    margin:0;
+    padding:0;
+    background-color: #e9ebed;
+    font-family:'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+  }
+
+  nav{
+    visibility: hidden;
+  }
+
+  #content{
+    background-color:#ffffff;
+
+  }
+
+  #content #cap{
+    height: 254px;
+    background-image: url('../img/perfil.jpg');
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 200;
+  }
+
+  #content #cap img{
+    width:162px;
+    height:162px;
+    border-radius: 50%;
+    border:solid 4px white;
+    margin-top: 173px;
+  }
+
+  #content #cap h2{
+    font-size: 28px;
+    font-weight: 200;
+
+
+  }
+
+  #cap li{
+    list-style: none;
+    line-height: 43px;
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+  }
+
+  #cap li a{
+    color:#5067af;
+    text-decoration: none;
+  }
+
+  #principal{
+    margin-top: 262px;
+  }
 
 }
