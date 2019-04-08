@@ -1,0 +1,284 @@
+body, html{
+  margin:0;
+  padding:0;
+  background: #393D3F;
+  font-family: 'Lato', sans-serif;
+  color:#D7DCE0;
+}
+
+h3{
+  margin:0;
+  padding:0;
+}
+
+h4{
+  margin:0;
+  padding:0;
+  color:#EBF1F4;
+  font-weight: 300;
+}
+
+#container{
+  width:570px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color:#101619;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  border-radius: 14px;
+  bottom: 282px;
+}
+
+#container-top{
+  width: 170px;
+  float:left;
+  padding:0;
+
+
+}
+
+#container-top img{
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+  height:150px;
+
+  }
+
+#container-bottom{
+  width: 360px;
+  padding:10px 20px 20px 20px;
+  float:right;
+}
+
+#btns{
+  margin: 40px 0 10px 0;
+  width: 200px;
+  float:left;
+
+}
+
+#play, #backward, #forward{
+  width:30px;
+  height: 30px;
+  background:#101619;
+  border:0;
+  outline:none;
+  cursor:pointer;
+  font-size:26px;
+  line-height:26px;
+  color:#D7DCE0;
+}
+
+#timeNow{
+  margin:40px 0 10px 0;
+  width:160px;
+  float:left;
+  text-align: right;
+  line-height: 16px;
+  font-size: 16px;
+  padding-top: 14px;
+}
+
+#durationBar{
+  width:360px;
+  height:10px;
+  background: #476C9B;
+  display: flex;
+  cursor:pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0,0,0,0.3);
+  margin-top:10px;
+}
+
+#expandingBar{
+  height:10px;
+  background-color: #5C89C4;
+
+}
+
+#movingBar{
+  height:10px;
+  background: #5C89C4;
+
+}
+
+/* media */
+
+@media (min-width: 700px) {
+
+  #container{
+    width:700px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 14px;
+    bottom: 282px;
+  }
+
+  #container-top{
+    width: 170px;
+    float:left;
+    padding:0;
+
+
+  }
+
+  #container-top img{
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    object-fit: cover;
+    width: 100%;
+    height:150px;
+
+    }
+
+  #container-bottom{
+    width: 490px;
+    padding:10px 20px 20px 20px;
+    float:right;
+  }
+
+  #btns{
+    margin: 40px 0 10px 0;
+    width: 200px;
+    float:left;
+
+  }
+
+  #play, #backward, #forward{
+    width:30px;
+    height: 30px;
+    background:#fff;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    font-size:26px;
+    line-height:26px;
+    color:#333;
+  }
+
+  #timeNow{
+    margin:40px 0 10px 0;
+    width:270px;
+    float:left;
+    text-align: right;
+    line-height: 16px;
+    font-size: 16px;
+    padding-top: 14px;
+  }
+
+  #durationBar{
+    width:480px;
+    height:10px;
+    background: #333;
+    display: flex;
+    cursor:pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0,0,0,0.3);
+    margin-top:10px;
+  }
+
+  #expandingBar{
+    height:10px;
+    background-color: #ecedef;
+
+  }
+
+  #movingBar{
+    height:10px;
+    background: #fff;
+
+  }
+
+  @media (min-width:1000px) {
+    #container{
+      width:980px;
+      position: fixed;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      background:#fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+      border-radius: 14px;
+      bottom: 282px;
+    }
+
+    #container-top{
+      width: 170px;
+      float:left;
+      padding:0;
+
+
+    }
+
+    #container-top img{
+      border-top-left-radius: 14px;
+      border-bottom-left-radius: 14px;
+      object-fit: cover;
+      width: 100%;
+      height:150px;
+
+      }
+
+    #container-bottom{
+      width: 770px;
+      padding:10px 20px 20px 20px;
+      float:right;
+    }
+
+    #btns{
+      margin: 40px 0 10px 0;
+      width: 200px;
+      float:left;
+
+    }
+
+    #play, #backward, #forward{
+      width:30px;
+      height: 30px;
+      background:#fff;
+      border:0;
+      outline:none;
+      cursor:pointer;
+      font-size:26px;
+      line-height:26px;
+      color:#333;
+    }
+
+    #timeNow{
+      margin:40px 0 10px 0;
+      width:550px;
+      float:left;
+      text-align: right;
+      line-height: 16px;
+      font-size: 16px;
+      padding-top: 14px;
+    }
+
+    #durationBar{
+      width:760px;
+      height:10px;
+      background: #333;
+      display: flex;
+      cursor:pointer;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 10px 0 rgba(0,0,0,0.3);
+      margin-top:10px;
+    }
+
+    #expandingBar{
+      height:10px;
+      background-color: #ecedef;
+
+    }
+
+    #movingBar{
+      height:10px;
+      background: #fff;
+
+    }
+
+  }

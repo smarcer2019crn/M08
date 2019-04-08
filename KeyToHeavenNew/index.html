@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-top">
+        <img src="./img/poster1.png" alt="">
+      </div>
+      <div id="container-bottom">
+        <h3 id="songName">Song NAME</h3>
+        <h4 id="songArtist">Song artist</h4>
+        <div id="durationBar">
+          <div id="expandingBar"></div>
+          <div id="movingBar"></div>
+        </div>
+        <div id="btns">
+          <button id="backward" onclick="pre()"><i class="fas fa-backward"></i></button>
+          <button id="play" onclick="playPause()"><i class="fas fa-play"></i></button>
+          <button id="forward" onclick="next()"><i class="fas fa-forward"></i></button>
+        </div>
+        <div id="timeNow">00:00 / 00:00</div>
+
+      </div>
+    </div>
+    <div id="menu">
+      <div id="btns_menu">
+        <button id="home" onclick=""><i class="fas fa-home"></i></button>
+        <button id="liked" onclick=""><i class="fas fa-heart"></i></button>
+        <button id="search" onclick=""><i class="fas fa-search"></i></button>
+        <button id="lists" onclick=""><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      var songs = ["music/BETO - YA NADA LES SALVA.mp3","music/RUBEN LUMIER FT IVAN CANO Y DANI HEREDIA - HILANDO FINO.mp3", "music/Sara Hebe - Esa Mierda.mp3" ]
+      var songNames = ["YA NADA LES SALVA","HILANDO FINO", "Esa Mierda" ]
+      var artist = ["BETO","RUBEN LUMIER FT IVAN CANO Y DANI HEREDIA", "Sara Hebe" ]
+      var poster = ["./img/poster1.png","./img/poster2.png", "./img/poster3.png" ]
+
+      var songName = document.getElementById('songName');
+      var songArtist = document.getElementById('songArtist');
+      var expandingBar = document.getElementById("expandingBar");
+      var timeNow = document.getElementById("timeNow");
+
+
+      var song = new Audio();
+      var currentSong = 0;
+      window.onload = playSong;
+
+      function playSong(){
+        song.src = songs[currentSong];
+        songName.textContent = songNames[currentSong];
+        songArtist.textContent = artist[currentSong];
+        song.play();
+      }
+
+
+//cambiar boton play o pause
+
+      function playPause(){
+        if(song.paused){
+          song.play();
+          $("#play i").removeClass("fa-play").addClass("fa-pause");
+        }
+        else{
+          song.pause();
+          $("#play i").removeClass("fa-pause").addClass("fa-play");
+        }
+      }
+
+      song.addEventListener('timeupdate', function(){
+        var position = song.currentTime / song.duration;
+        expandingBar.style.width = position * 100 + '%';
+        convertTime(Math.round(song.currentTime));
+        if(song.ended){
+          next();
+        }
+
+
+      });
+
+      function convertTime(seconds){
+
+        var min = Math.floor(seconds / 60);
+        var sec = seconds % 60;
+        min = (min < 10) ? "0" + min : min;
+        sec = (sec < 10) ? "0" + sec : sec;
+        timeNow.textContent = min + ":" + sec;
+        totalTime(Math.round(song.duration));
+
+
+      }
+
+      function totalTime(seconds){
+
+        var min = Math.floor(seconds / 60);
+        var sec = seconds % 60;
+        min = (min < 10) ? "0" + min : min;
+        sec = (sec < 10) ? "0" + sec : sec;
+        timeNow.textContent += " / " + min + ":" + sec;
+      }
+
+      function next(){
+        currentSong++;
+        if(currentSong > 2){
+          currentSong = 0;
+        }
+
+        playSong();
+        $("#play i").removeClass("fa-play").addClass("fa-pause");
+        $("#container-top img").attr("src", poster[currentSong]);
+
+      }
+
+      function pre(){
+        currentSong--;
+        if(currentSong < 0){
+          currentSong = 2;
+        }
+
+        playSong();
+        $("#play i").removeClass("fa-play").addClass("fa-pause");
+        $("#container-top img").attr("src", poster[currentSong]);
+
+      }
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
